@@ -52,7 +52,7 @@ use crate::{
 pub mod config;
 pub mod monitor;
 
-mod serial;
+pub mod serial;
 
 /// Establish a connection with a target device
 #[derive(Debug, Args, Clone)]

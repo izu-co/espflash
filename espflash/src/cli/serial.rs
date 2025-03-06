@@ -142,7 +142,7 @@ const KNOWN_DEVICES: &[UsbDevice] = &[
     }, // QinHeng Electronics CH340 serial converter
 ];
 
-pub(super) fn known_ports_filter(port: &SerialPortInfo, config: &Config) -> bool {
+pub fn known_ports_filter(port: &SerialPortInfo, config: &Config) -> bool {
     // Does this port match a known one?
     match &port.port_type {
         SerialPortType::UsbPort(info) => config
