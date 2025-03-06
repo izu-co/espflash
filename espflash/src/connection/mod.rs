@@ -35,8 +35,8 @@ use self::{
 };
 use crate::error::{ConnectionError, Error, ResultExt, RomError, RomErrorKind};
 
-pub(crate) mod command;
-pub(crate) mod reset;
+pub mod command;
+pub mod reset;
 
 const MAX_CONNECT_ATTEMPTS: usize = 7;
 const MAX_SYNC_ATTEMPTS: usize = 5;
